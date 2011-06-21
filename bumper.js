@@ -43,6 +43,6 @@ release = process.argv[2]
 updatePackage(function(err, next) {
   if (err) die("Could not bump version: " + err)
 
-  console.log(next)
+  console.log('v' + next)
 })
 
