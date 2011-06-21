@@ -2,6 +2,8 @@
 
 Simple release management for npm packages with git
 
+## WARNING: NOT USABLE YET
+
 ## Install
 
     $ npm install -g bumper
