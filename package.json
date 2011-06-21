@@ -1,7 +1,7 @@
 { "author": "Isaac Wolkerstorfer <agnoster@gmail.com> (http://agnoster.net/)"
 , "name": "bumper"
 , "description": "Simple release management for npm packages using git"
-, "version": "0.0.1"
+, "version": "0.0.2"
 , "homepage": "https://github.com/agnoster/bumper"
 , "repository": 
   { "type": "git"
