@@ -1,3 +1,14 @@
 #!/bin/sh
 
-node bumper.js $@
+VERSION=`node bumper.js $@`
+
+if [ $? -eq 0 ]
+then echo "bump to $VERSION" && \
+  git add package.json && \
+  git commit -m "Bump version in package.json to $VERSION" && \
+  git tag -a -m "Release version $VERSION" && \
+  git push && \
+  npm publish
+else
+  echo "Usage: bumper [major|minor|patch|build]" >&2
+fi

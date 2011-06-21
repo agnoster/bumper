@@ -24,8 +24,6 @@ function updatePackage(cb) {
 
     next = next.replace(/-0$/, '')
 
-    console.log(package.name + " " + current + " -> " + next)
-
     data = data.replace(/("version"\s*:\s*")[^"]+"/, '$1' + next + '"')
 
     fs.writeFile('package.json', data, 'utf8', function(err) {
@@ -35,8 +33,7 @@ function updatePackage(cb) {
 }
 
 function die(msg) {
-  console.log(msg)
-  console.log("\nUsage: bumper [major|minor|patch]")
+  process.stderr.write(msg + "\n")
   process.exit(1)
 }
 
@@ -46,6 +43,6 @@ release = process.argv[2]
 updatePackage(function(err, next) {
   if (err) die("Could not bump version: " + err)
 
-  console.log("done")
+  console.log(next)
 })
 
