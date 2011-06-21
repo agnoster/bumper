@@ -1,0 +1,18 @@
+{ "author": "Isaac Wolkerstorfer <agnoster@gmail.com> (http://agnoster.net/)"
+, "name": "bumper"
+, "description": "Simple release management for npm packages using git"
+, "version": "0.0.0"
+, "homepage": "https://github.com/agnoster/bumper"
+, "repository": 
+  { "type": "git"
+  , "url": "git://github.com/agnoster/bumper.git" }
+, "engines": { "node": "~0.4.8" }
+, "dependencies":
+  { "semver": "~1.0.7"
+  }
+, "devDependencies": {}
+, "license" :
+  { "type" : "MIT"
+  , "url" : "https://github.com/agnoster/bumper/raw/master/LICENSE" }
+, "bin" : { "bumper" : "./bin/bumper" }
+}
