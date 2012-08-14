@@ -1,6 +1,6 @@
 #!/bin/sh
 
-VERSION=`node bumper.js $@`
+VERSION=`node /usr/local/lib/node_modules/bumper/index.js $@`
 
 if [ $? -eq 0 ]
 then echo "bump to $VERSION" && \

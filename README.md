@@ -19,7 +19,7 @@ Simple release management for npm packages with git
     git push origin
     npm publish
 
-## License
+## MIT License
 
 Copyright 2011 Isaac Wolkerstorfer.
 All rights reserved.

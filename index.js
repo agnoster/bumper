@@ -38,7 +38,7 @@ function die(msg) {
 }
 
 
-release = process.argv[2]
+var release = process.argv[2]
 
 updatePackage(function(err, next) {
   if (err) die("Could not bump version: " + err)
