@@ -1,4 +1,4 @@
-# bumper
+# bumper [![build status](https://secure.travis-ci.org/agnoster/bumper.png?branch=master)](http://travis-ci.org/agnoster/bumper)
 
 Simple release management for npm packages with git
 
