@@ -12,6 +12,9 @@
   { "semver": "~1.0.7"
   }
 , "devDependencies": {}
+, "scripts":
+  { "test": "node test.js"
+  }
 , "license": "MIT"
 , "bin" : { "bumper" : "./bin/bumper" }
 }
